@@ -17,7 +17,7 @@ function knight(position){
   position = position.toString();
   return [[1,2],[2,1],[2,-1],[-2,1],[-1,-2],[-2,-1],[-2,1],[-1,2]].filter(val =>
     parseInt(position[0]) + val[0] > 0 && parseInt(position[0]) + val[0] <= 8 
-    && parseInt(position[1]) + val[1] >0  && parseInt(position[1]) + val[1] <= 8 ).length;
+    && parseInt(position[1]) + val[1] >0  && parseInt(position[1]) + val[1] <= 8 );
 }
 
 console.log(knight(11));
